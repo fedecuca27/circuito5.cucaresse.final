@@ -394,17 +394,20 @@ img {
     font-weight: normal;
     font-family: "Roboto", sans-serif;
     font-size: 13px !important; }
-  .flexExtend, #serviciosGrid, #indexGrid {
+  .flexExtend, #indexGrid {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center; }
-  .gridExtend, #galeriaGrid, #encuestaGrid, #nosotrosGrid, #footerGrid {
+    align-items: flex-start; }
+  .gridExtend, #serviciosGrid, #galeriaGrid, #encuestaGrid, #nosotrosGrid, #footerGrid {
     display: grid;
     width: 100%;
     height: max-content;
     grid-template-columns: 95%; }
+  #serviciosGrid {
+    grid-template-rows: 150px 50px 80px 100px 150px 150px 150px 150px 150px;
+    grid-template-areas: "a1" "x1" "b1" "c1" "d1" "e1" "f1" "g1" "h1"; }
   #galeriaGrid {
     grid-template-rows: 150px 100px 50px 300px 300px 300px 300px 50px 300px 50px 300px 300px 300px;
     grid-template-areas: "a1" "b1" "c1" "d1" "d2" "d3" "d4" "e1" "f1" "g1" "h1" "h2" "h3";
@@ -416,8 +419,8 @@ img {
     justify-items: center;
     align-items: center; }
   #nosotrosGrid {
-    grid-template-rows: 150px 100px 240px;
-    grid-template-areas: "a1" "b1" "c1";
+    grid-template-rows: 150px 200px 350px 450px;
+    grid-template-areas: "a1" "b1" "c1" "d1";
     justify-items: center;
     align-items: center; }
   #footerGrid {
