@@ -1,0 +1,62 @@
+@import "variables.scss";
+@import "clasesMadre.scss";
+#footerGrid{
+@extend .gridExtendDos;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 140px;
+	grid-template-areas: "a1 b0 c1";
+	justify-items: center;
+	align-items: center;
+}
+#nombreDireccion{
+    grid-area: a1;
+}
+#redeSociales{
+    grid-area: c1;
+    justify-self: right;
+}
+.listaDesordenada {
+    color: $colorLetra;
+    list-style-type: square;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+        .listaOrdenada {
+            color: $colorLetra;
+            list-style-type: inherit;
+            font-family: 'Roboto', sans-serif;
+            text-align: left;
+        }
+        .fondoFooter {
+            background-image: $imagenFondoFooter;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100vw;
+            height: 100%;
+        }
+        .footer {
+            border: 10px double black;
+            padding: 10px 10px 10px 10px;
+            width: 100vw;
+            height: 150px;
+        }
+        .tituloFooter {
+            font-family: 'Stardos Stencil';
+            text-align: left;
+        }
+        .letraFooter {
+            color: $colorLetra;
+            font-family: 'Stardos Stencil';
+            text-align: left;
+        }
+        .logosFooter {
+            width: 10%;
+            height: 10%;
+            display: inline-block;
+        }
+        .redesSociales {
+            bottom: 20px;
+            right: 30px;
+        }
+
+

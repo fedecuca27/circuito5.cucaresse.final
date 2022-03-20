@@ -1,0 +1,32 @@
+@import "variables.scss";
+
+    .fondoHeader {
+        width: 100vw;
+        height: 100px;
+        background-image: $imagenFondoHeader;
+        background-repeat: repeat;
+        border: 10px solid black;
+        padding: 10px 10px 10px 10px;
+    }
+    .logoHeader {
+        height: 80px;
+        width: 80px;
+    }
+    .letraHeader {
+        font-family: 'Stardos Stencil';
+        color: $colorLetra; 
+    }
+    .nav {
+        top: 0px;
+    }
+    .menu {
+        color: $colorLetra;
+        list-style-type: none;
+        font-family: 'Stardos Stencil';
+        text-align: right;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style-type: none;
+        align-items: center;
+    }
